@@ -1,0 +1,9 @@
+{% extends "shortner/base.html" %}
+{% block content %}
+  {% for link in links %}
+    <h1>{{ link.title }}</h1>
+    <p>Long: {{ link.long }}</p>
+    <p>Short: {{ link.short }}</p>
+    <p>Date: {{ link.created }}</p>        
+  {% endfor %}
+{% endblock content %}
