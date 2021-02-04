@@ -2,8 +2,8 @@
 {% block content %}
   {% for link in links %}
     <h1>{{ link.title }}</h1>
-    <p>Long: {{ link.long }}</p>
-    <p>Short: {{ link.short }}</p>
-    <p>Date: {{ link.created }}</p>        
+    <p>Long: {{ link.long_url }}</p>
+    <p>Short: {{ link.short_url }}</p>
+    <p>Date: {{ link.date_created | date:"F d, Y" }}</p>        
   {% endfor %}
 {% endblock content %}
